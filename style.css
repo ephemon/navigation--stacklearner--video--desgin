@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  width: 100vw;
+  height: 65px;
+  background: rgb(0, 0, 39);
+}
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+}
+
+/* brand Section starts  */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.brand__logo span {
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.brand__title a {
+  color: white;
+  text-decoration: none;
+}
+/* brand Section End */
+
+/* Main Menu Start */
+.main-menu {
+  display: flex;
+  margin-left: 2rem;
+}
+.main-menu a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.main-menu a:hover {
+  color: #fff000;
+  text-decoration: underline;
+}
+/* Main Menu End */
+
+/* Right Section Starts  */
+.right-menu a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.right-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.right-menu button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.right-menu button > span {
+  font-size: 1.5rem;
+}
+/* Right Section Ends */
+
+/* right__menu--button starts */
+.right__menu--button {
+  position: relative;
+}
+.person__dropdown--ul {
+  position: absolute;
+  width: 200px;
+  right: 0%;
+  background: #fff;
+  box-shadow: 4px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  display: none;
+}
+.person__dropdown--li {
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+.person__dropdown--li a {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+.person__dropdown--li:hover {
+  background: #ddd;
+}
+.right__menu--button:hover .person__dropdown--ul {
+  display: block;
+}
+/* right__menu--button End */
+
+/* Dropdown menu starts */
+.main-main {
+  position: relative;
+}
+.mega-menu-dropdown {
+  position: absolute;
+  width: 700px;
+  height: 300px;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  display: flex;
+  justify-content: space-around;
+  visibility: hidden;
+}
+.mega-menu-dropdown .mega__ul {
+  list-style: none;
+}
+.mega__ul a {
+  color: #333;
+  font-size: 0.8rem;
+  text-align: left;
+}
+.mega__ul a:hover {
+  color: green;
+}
+.mega-menu-dropdown h1 {
+  margin-top: 0.9em;
+}
+.mega__ul .mega__li {
+  margin: 1rem 0rem;
+}
+.menu-one:hover .mega-menu-dropdown {
+  visibility: visible;
+}
+.menu-two:hover .mega-menu-dropdown {
+  visibility: visible;
+}
+.menu-there:hover .mega-menu-dropdown {
+  visibility: visible;
+}
+.menu-four:hover .mega-menu-dropdown {
+  visibility: visible;
+}
+/* Dropdown menu ends */
